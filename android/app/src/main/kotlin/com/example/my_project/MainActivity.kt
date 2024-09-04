@@ -1,4 +1,4 @@
-package com.mycompany.phatox
+package com.gis.phatox
 
 import io.flutter.embedding.android.FlutterActivity
 

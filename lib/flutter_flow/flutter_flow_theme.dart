@@ -54,6 +54,15 @@ abstract class FlutterFlowTheme {
   late Color error;
   late Color info;
 
+  late Color primaryInactive;
+  late Color darkPrimary;
+  late Color errorAccent;
+  late Color infoAccent;
+  late Color successAccent;
+  late Color warningAccent;
+  late Color solidWhite;
+  late Color solidDark;
+
   @Deprecated('Use displaySmallFamily instead')
   String get title1Family => displaySmallFamily;
   @Deprecated('Use displaySmall instead')
@@ -125,22 +134,31 @@ class LightModeTheme extends FlutterFlowTheme {
   @Deprecated('Use tertiary instead')
   Color get tertiaryColor => tertiary;
 
-  late Color primary = const Color(0xFF4B39EF);
-  late Color secondary = const Color(0xFF39D2C0);
-  late Color tertiary = const Color(0xFFEE8B60);
+  late Color primary = const Color(0xFFFFBB00);
+  late Color secondary = const Color(0xFFEE8B60);
+  late Color tertiary = const Color(0xFFFFFADF);
   late Color alternate = const Color(0xFFE0E3E7);
-  late Color primaryText = const Color(0xFF14181B);
+  late Color primaryText = const Color(0xFF333333);
   late Color secondaryText = const Color(0xFF57636C);
-  late Color primaryBackground = const Color(0xFFF1F4F8);
+  late Color primaryBackground = const Color(0xFFF3F3F2);
   late Color secondaryBackground = const Color(0xFFFFFFFF);
-  late Color accent1 = const Color(0x4C4B39EF);
-  late Color accent2 = const Color(0x4D39D2C0);
-  late Color accent3 = const Color(0x4DEE8B60);
+  late Color accent1 = const Color(0xC3F1C657);
+  late Color accent2 = const Color(0xC5EE8B60);
+  late Color accent3 = const Color(0xC4BCB9A5);
   late Color accent4 = const Color(0xCCFFFFFF);
   late Color success = const Color(0xFF249689);
   late Color warning = const Color(0xFFF9CF58);
-  late Color error = const Color(0xFFFF5963);
-  late Color info = const Color(0xFFFFFFFF);
+  late Color error = const Color(0xFFFF4F4F);
+  late Color info = const Color(0xFF6096FF);
+
+  late Color primaryInactive = const Color(0xFFEDD9A1);
+  late Color darkPrimary = const Color(0xFFA0663D);
+  late Color errorAccent = const Color(0xFFFFB9B9);
+  late Color infoAccent = const Color(0xFFD6E4FF);
+  late Color successAccent = const Color(0xFF9EF5E2);
+  late Color warningAccent = const Color(0xFFF7E1A4);
+  late Color solidWhite = const Color(0xFFE7E7E7);
+  late Color solidDark = const Color(0xFF333333);
 }
 
 abstract class Typography {
@@ -296,22 +314,31 @@ class DarkModeTheme extends FlutterFlowTheme {
   @Deprecated('Use tertiary instead')
   Color get tertiaryColor => tertiary;
 
-  late Color primary = const Color(0xFF4B39EF);
-  late Color secondary = const Color(0xFF39D2C0);
-  late Color tertiary = const Color(0xFFEE8B60);
+  late Color primary = const Color(0xFFFFBB00);
+  late Color secondary = const Color(0xFFEE8B60);
+  late Color tertiary = const Color(0xFFFFFADF);
   late Color alternate = const Color(0xFF262D34);
-  late Color primaryText = const Color(0xFFFFFFFF);
+  late Color primaryText = const Color(0xFFE7E7E7);
   late Color secondaryText = const Color(0xFF95A1AC);
   late Color primaryBackground = const Color(0xFF1D2428);
   late Color secondaryBackground = const Color(0xFF14181B);
-  late Color accent1 = const Color(0x4C4B39EF);
-  late Color accent2 = const Color(0x4D39D2C0);
-  late Color accent3 = const Color(0x4DEE8B60);
+  late Color accent1 = const Color(0xC3F1C657);
+  late Color accent2 = const Color(0xC5EE8B60);
+  late Color accent3 = const Color(0xC4BCB9A5);
   late Color accent4 = const Color(0xB2262D34);
   late Color success = const Color(0xFF249689);
   late Color warning = const Color(0xFFF9CF58);
-  late Color error = const Color(0xFFFF5963);
-  late Color info = const Color(0xFFFFFFFF);
+  late Color error = const Color(0xFFFF4F4F);
+  late Color info = const Color(0xFF6096FF);
+
+  late Color primaryInactive = const Color(0xFFEDD9A1);
+  late Color darkPrimary = const Color(0xFFA0663D);
+  late Color errorAccent = const Color(0xFFFFB9B9);
+  late Color infoAccent = const Color(0xFFD6E4FF);
+  late Color successAccent = const Color(0xFF9EF5E2);
+  late Color warningAccent = const Color(0xFFF7E1A4);
+  late Color solidWhite = const Color(0xFFE7E7E7);
+  late Color solidDark = const Color(0xFFE7E7E7);
 }
 
 extension TextStyleHelper on TextStyle {
